@@ -183,6 +183,19 @@ width: 8rem;
 padding-left: 32px;
 }
 
+
+@media only screen and (min-width:1024px){
+    #section3{
+        grid-template-areas: "section3Title section3Description";
+    }
+
+    #section3Title{
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    }
+}
+
 #section4 {
   grid-template-columns: 1fr 1fr;
   grid-auto-flow: column;
