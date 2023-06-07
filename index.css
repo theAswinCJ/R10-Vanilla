@@ -75,7 +75,7 @@ line-height: 1.5rem;
   background-color: #f7fbfa;
   height: 10vh;
   gap: 1px;
-  grid-template-areas: "section1Logo section1Links";
+  grid-template-areas: "section1Logo section1Logo";
   background-color: #e1e2e2;
 }
 
@@ -90,7 +90,7 @@ line-height: 1.5rem;
 }
 
 #section1Links {
-  display: grid;
+  display: none;
   grid-area: section1Links;
   background-color: #f7fbfa;
   padding: 0px 24px;
@@ -118,13 +118,13 @@ line-height: 1.5rem;
   color: #202025;
 }
 
-@media only screen and (min-width:320px){
+@media only screen and (min-width:1024px){
     #section1{
-  grid-template-areas: "section1Logo section1Logo";
+        grid-template-areas: "section1Logo section1Links";
     }
 
     #section1Links{
-        display:none
+        display:grid
     }
 }
 
@@ -189,12 +189,41 @@ padding-left: 32px;
   grid-template-areas: "section4Illustration section4Illustration" "section4Title section4Title";
 }
 
+#section4Content{
+    display: grid;
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 1;
+  grid-row-end: 1;
+  z-index: 2;
+  align-content: center;
+}
+
 #section4Title {
+    display:grid;
   grid-area: section4Title;
+  background-color: #DBFF73;
+  grid-auto-flow: column;
+  padding: 32px;
 }
 
 #section4Illustration {
+    display:grid;
   grid-area: section4Illustration;
+}
+
+#section4IllustrationDummy{
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    z-index: 1;
+}
+
+@media only screen and (min-width:1024px){
+    #section4{
+        grid-template-areas: "section4Illustration section4Title";
+    }
 }
 
 #section5 {
