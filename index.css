@@ -1,0 +1,121 @@
+body{
+    margin:0px;
+    padding:0px;
+    font-family: 'Inter', sans-serif;
+}
+
+.siteContainer{
+    background-color: pink;
+    display:grid;
+    grid-auto-flow: row;
+}
+
+.section{
+    min-height:500px;
+    display:grid;
+}
+
+#section1{
+    background-color: rebeccapurple;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-flow: column;
+}
+
+#section2{
+    background-color: salmon;
+}
+
+#section3{
+    background-color: firebrick;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-flow: column;
+}
+
+#section4{
+    background-color: yellowgreen; 
+    grid-template-columns: 1fr 1fr;
+    grid-auto-flow: column;
+}
+
+#section5{
+    background-color: yellow;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-flow: column;
+}
+
+#section6{
+    background-color: gold;
+}
+
+#section7{
+    background-color: beige;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-flow: column;
+}
+
+#section8{
+    background-color: khaki;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-flow: column;
+}
+
+#section9{
+    background-color: navy;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-flow: column;
+}
+
+#section10{
+    background-color: black;
+}
+
+.featuresList{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-flow: column;
+    grid-template-areas: "feature1 feature2" "feature3 feature4" "feature5 feature6" "feature7 feature8";
+}
+
+.featureItem{
+    min-height:250px;
+}
+
+#feature1{
+    background-color:blanchedalmond;
+    grid-area: feature1;
+}
+
+#feature2{
+    background-color:seagreen;
+    grid-area: feature2;
+}
+
+#feature3{
+    background-color:darkorange;
+    grid-area: feature3;
+}
+
+#feature4{
+    background-color:hotpink;
+    grid-area: feature4;
+}
+
+#feature5{
+    background-color:violet;
+    grid-area: feature5;
+}
+
+#feature6{
+    background-color:wheat;
+    grid-area: feature6;
+}
+
+#feature7{
+    background-color:indigo;
+    grid-area: feature7;
+}
+
+#feature8{
+    background-color:brown;
+    grid-area: feature8;
+}
