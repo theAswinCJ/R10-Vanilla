@@ -51,96 +51,232 @@ body{
 }
 
 #section3{
-    background-color: firebrick;
     grid-template-columns: 1fr 1fr;
     grid-auto-flow: column;
+    grid-template-areas: "section3Title section3Title" "section3Description section3Description";
+}
+
+#section3Title{
+    grid-area: section3Title;
+}
+
+#section3Description{
+    grid-area: section3Description;
 }
 
 #section4{
-    background-color: yellowgreen; 
     grid-template-columns: 1fr 1fr;
     grid-auto-flow: column;
+    grid-template-areas: "section4Illustration section4Illustration" "section4Title section4Title";
+}
+
+#section4Title{
+    grid-area: section4Title;
+}
+
+#section4Illustration{
+    grid-area: section4Illustration;
 }
 
 #section5{
-    background-color: yellow;
     grid-template-columns: 1fr 1fr;
-    grid-auto-flow: column;
+    grid-template-areas: 
+    "featuresTitle featuresTitle"
+    "featuresList featuresList";
 }
 
-#section6{
-    background-color: gold;
-}
 
-#section7{
-    background-color: beige;
-    grid-template-columns: 1fr 1fr;
-    grid-auto-flow: column;
-}
-
-#section8{
-    background-color: khaki;
-    grid-template-columns: 1fr 1fr;
-    grid-auto-flow: column;
-}
-
-#section9{
-    background-color: navy;
-    grid-template-columns: 1fr 1fr;
-    grid-auto-flow: column;
-}
-
-#section10{
-    background-color: black;
-}
-
-.featuresList{
+#featuresTitle{
     display:grid;
-    grid-template-columns: 1fr 1fr;
-    grid-auto-flow: column;
-    grid-template-areas: "feature1 feature2" "feature3 feature4" "feature5 feature6" "feature7 feature8";
+    grid-area:featuresTitle;
+    /* min-height:250px; */
+}
+
+#featuresList{
+    display:grid;
+    grid-area: featuresList;
+    grid-template-columns: 1fr 1fr; 
+    grid-template-areas: 
+    "feature1 feature2"
+    "feature3 feature4"
+    "feature5 feature6"
+    "feature7 feature8";
 }
 
 .featureItem{
-    min-height:250px;
+    /* min-height:250px; */
+    display:grid;
 }
 
 #feature1{
-    background-color:blanchedalmond;
     grid-area: feature1;
 }
 
 #feature2{
-    background-color:seagreen;
     grid-area: feature2;
 }
 
 #feature3{
-    background-color:darkorange;
     grid-area: feature3;
 }
 
 #feature4{
-    background-color:hotpink;
     grid-area: feature4;
 }
 
 #feature5{
-    background-color:violet;
     grid-area: feature5;
 }
 
 #feature6{
-    background-color:wheat;
     grid-area: feature6;
 }
 
 #feature7{
-    background-color:indigo;
     grid-area: feature7;
 }
 
 #feature8{
-    background-color:brown;
     grid-area: feature8;
+}
+
+
+@media only screen and (min-width: 1024px)  {
+#section5{
+     grid-template-areas: 
+    "featuresTitle featuresList"
+    "featuresTitle featuresList";
+    max-height:500px;
+}
+
+#featuresList{
+    grid-template-areas: 
+    "feature1 feature2"
+    "feature3 feature4"
+    "feature5 feature6"
+    "feature7 feature8";
+    overflow-y: scroll;
+}
+
+ /* #featuresList::-webkit-scrollbar {
+   display:none;
+} */
+
+#featuresTitle{
+    height:500px;
+}
+
+.featureItem{
+    height:250px;
+}
+
+}
+
+#section6{
+   
+}
+
+#section7{
+    grid-template-columns: 1fr 1fr;
+    grid-auto-flow: column;
+    grid-template-areas:
+    "section7Illustration section7Illustration"
+    "section7Content section7Content";
+}
+
+#section7Illustration{
+    display:grid;
+    grid-area:section7Illustration;
+}
+
+#section7Content{
+    display:grid;
+    grid-area:section7Content;
+}
+
+#section8{
+    grid-template-columns: 1fr 1fr;
+    grid-auto-flow: column;
+    grid-template-areas:
+    "section8Illustration section8Illustration"
+    "section8Content section8Content";
+}
+
+#section8Illustration{
+    display:grid;
+    grid-area:section8Illustration;
+}
+
+#section8Content{
+    display:grid;
+    grid-area:section8Content;
+}
+
+#section9{
+    grid-template-columns: 1fr 1fr;
+    grid-auto-flow: column;
+    grid-template-areas:
+    "section9Download section9Download"
+    "section9Newsletter section9Newsletter";
+}
+
+
+#section9Download{
+    display:grid;
+    grid-area:section9Download;
+}
+
+#section9Newsletter{
+    display:grid;
+    grid-area:section9Newsletter;
+}
+
+
+#section10{
+    grid-template-columns: 0.33fr 0.33fr 0.34fr;
+    grid-auto-flow: column;
+    grid-template-areas:
+    "section10Header section10Header section10Header"
+    "section10Links1 section10Links2 section10Socials"
+    "section10Divider section10Divider section10Divider"
+    "section10Copyright section10Copyright section10Copyright";
+}
+
+#section10Header{
+    display:grid;
+    grid-area:section10Header;
+}
+
+#section10Links1{
+    display:grid;
+    grid-area:section10Links1;
+}
+
+#section10Links2{
+    display:grid;
+    grid-area:section10Links2;
+}
+
+#section10Socials{
+    display:grid;
+    grid-area:section10Socials;
+}
+#section10Divider{
+    display:grid;
+    grid-area:section10Divider;
+}
+
+#section10Copyright{
+    display:grid;
+    grid-area:section10Copyright;
+}
+
+@media only screen and (min-width: 1024px)  {
+    #section10{
+    grid-template-columns: 0.5fr 0.17fr 0.17fr 0.16fr;
+    grid-template-areas:
+    "section10Header section10Links1 section10Links2 section10Socials"
+    "section10Divider section10Divider section10Divider section10Divider"
+    "section10Copyright section10Copyright section10Copyright section10Copyright";
+    }
 }
