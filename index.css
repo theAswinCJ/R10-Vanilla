@@ -163,6 +163,11 @@ body {
     font-size: 1.25rem;
     line-height: 1.5rem;
   }
+
+  .subHeading{
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
 }
 
 .section {
@@ -534,6 +539,22 @@ body {
 
 #section6 {    
   padding: 3rem 1.5rem 1.5rem 1.5rem;
+}
+
+@media only screen and (min-width: 1024px) {
+  #section6 {
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    padding: 6rem 3rem 3rem 6rem;
+  }
+
+  #section6 p{
+    max-width:500px;
+    text-align: center;
+    justify-self: center;
+  }
 }
 
 #section7 {
