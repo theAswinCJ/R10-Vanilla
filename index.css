@@ -621,6 +621,23 @@ body {
   grid-area: section8Content;
 }
 
+@media only screen and (min-width: 1024px) {
+  #section8 {
+    grid-template-areas:
+      "section8Content section8Illustration"
+      "section8Content section8Illustration";
+  }
+
+  #section8Illustration{
+    padding:3rem;
+    align-items: center;
+  }
+
+  #section8Content{
+    padding:3rem;
+  }
+}
+
 #section9 {
   grid-template-columns: 1fr 1fr;
   grid-auto-flow: column;
