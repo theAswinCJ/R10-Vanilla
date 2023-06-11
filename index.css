@@ -49,6 +49,22 @@ body {
   color: #686a6c;
 }
 
+.subHeading{
+  font-family: "Inter", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-style: normal;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  letter-spacing: -0.02em;
+  font-weight: 700;
+  color: #686A6C;
+  text-align: left;
+}
+
+.black{
+  color: #202025;
+}
+
 @media only screen and (min-width: 1024px) {
   .title {
     font-size: 5rem;
@@ -407,7 +423,8 @@ body {
 
 }
 
-#section6 {
+#section6 {    
+  padding: 3rem 1.5rem 1.5rem 1.5rem;
 }
 
 #section7 {
@@ -416,16 +433,25 @@ body {
   grid-template-areas:
     "section7Illustration section7Illustration"
     "section7Content section7Content";
+  padding: 1.5rem 1.5rem 1.5rem 1.5rem;
 }
 
 #section7Illustration {
   display: grid;
   grid-area: section7Illustration;
+  padding-bottom: 1.5rem;
 }
 
 #section7Content {
   display: grid;
   grid-area: section7Content;
+}
+
+.section7ListItem{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: flex-start;
 }
 
 #section8 {
@@ -434,11 +460,13 @@ body {
   grid-template-areas:
     "section8Illustration section8Illustration"
     "section8Content section8Content";
+  padding: 1.5rem 1.5rem 1.5rem 1.5rem;
 }
 
 #section8Illustration {
   display: grid;
   grid-area: section8Illustration;
+  padding-bottom: 1.5rem;
 }
 
 #section8Content {
