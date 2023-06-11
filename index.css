@@ -373,7 +373,13 @@ body {
   display: grid;
   grid-area: featuresTitle;
   padding: 32px;
-  /* min-height:250px; */
+}
+
+@media only screen and (min-width: 1024px) {
+  #featuresTitle {
+    position: sticky;
+    top: 0;
+  }
 }
 
 #featuresList {
