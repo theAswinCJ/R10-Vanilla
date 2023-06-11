@@ -583,43 +583,71 @@ body {
 }
 
 #section10 {
-  grid-template-columns: 0.33fr 0.33fr 0.34fr;
+  grid-template-columns: 2fr 2fr 0.25fr;
   grid-auto-flow: column;
   grid-template-areas:
     "section10Header section10Header section10Header"
     "section10Links1 section10Links2 section10Socials"
     "section10Divider section10Divider section10Divider"
     "section10Copyright section10Copyright section10Copyright";
+  padding: 1.5rem 1.5rem 1.5rem 1.5rem;
 }
 
 #section10Header {
   display: grid;
   grid-area: section10Header;
+  justify-content: start;
+  padding: 2rem 0rem;
+}
+
+#section10Logo {
+  display: grid;
+  background-color: #f7fbfa;
+  justify-content: start;
+  align-content: center;
+  align-items: center;
 }
 
 #section10Links1 {
   display: grid;
   grid-area: section10Links1;
+  grid-auto-flow: row;
 }
 
 #section10Links2 {
   display: grid;
   grid-area: section10Links2;
+  grid-auto-flow: row;
 }
 
 #section10Socials {
   display: grid;
   grid-area: section10Socials;
+  grid-auto-flow: row;
+}
+
+.footerLinksSocials{
+  display: flex;
+  justify-content: center;
 }
 
 #section10Divider {
   display: grid;
   grid-area: section10Divider;
+  border-bottom: 1px solid #e1e2e2;
+  margin:2rem 0rem;
 }
 
 #section10Copyright {
   display: grid;
+  font-family: "Inter", sans-serif;
+  -webkit-font-smoothing: antialiased;
   grid-area: section10Copyright;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  color: #A6AEAD;
 }
 
 @media only screen and (min-width: 1024px) {
