@@ -663,6 +663,47 @@ body {
   background:#202025;
 }
 
+#section9ButtonSVG{
+  width: 1.5rem;
+  height: 1.5rem;
+  fill: #F7FBFA;
+  transition: fill 0.2s;
+  padding-left: 16px;
+}
+
+#marketplaceButton{
+  align-items: center;
+  text-align: center;
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: center;
+  align-content: center;
+}
+
+@media only screen and (min-width: 1024px) {
+  #section9 {
+    grid-template-areas:
+      "section9Download section9Newsletter";
+  }
+
+  #section9Download{
+    padding:5rem;
+  }
+
+  #section9Download p{
+    max-width: 550px;
+  }
+
+  #section9Newsletter{
+    padding:5rem;
+  }
+
+  #section9 button{
+    max-width: 350px;
+  }
+  
+}
+
 #section10 {
   grid-template-columns: 2fr 2fr 0.25fr;
   grid-auto-flow: column;
@@ -738,5 +779,10 @@ body {
       "section10Header section10Links1 section10Links2 section10Socials"
       "section10Divider section10Divider section10Divider section10Divider"
       "section10Copyright section10Copyright section10Copyright section10Copyright";
+    padding: 6rem 6rem 3rem 6rem;
+  }
+
+  .footerLinksSocials{
+    justify-content: start;
   }
 }
