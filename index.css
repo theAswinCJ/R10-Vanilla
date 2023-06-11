@@ -584,6 +584,23 @@ body {
   justify-content: flex-start;
 }
 
+@media only screen and (min-width: 1024px) {
+  #section7 {
+    grid-template-areas:
+      "section7Illustration section7Content"
+      "section7Illustration section7Content";
+  }
+
+  #section7Illustration{
+    padding:3rem;
+    align-items: center;
+  }
+
+  #section7Content{
+    padding:3rem;
+  }
+}
+
 #section8 {
   grid-template-columns: 1fr 1fr;
   grid-auto-flow: column;
