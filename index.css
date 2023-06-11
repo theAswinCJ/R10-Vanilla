@@ -26,6 +26,7 @@ body {
   text-transform: uppercase;
   color: #f7fbfa;
   transition: all 0.2s;
+  -webkit-font-smoothing: antialiased;
 }
 
 .buttonWhite{
@@ -44,6 +45,7 @@ body {
   text-transform: uppercase;
   color: #202025;
   transition: all 0.2s;
+  -webkit-font-smoothing: antialiased;
 }
 
 .title {
@@ -55,6 +57,7 @@ body {
   letter-spacing: -0.02rem;
   color: #202025;
   margin: 24px 0px;
+  -webkit-font-smoothing: antialiased;
 }
 
 .description {
@@ -62,9 +65,10 @@ body {
   font-style: normal;
   font-weight: 500;
   font-size: 1rem;
-  line-height: 1.25rem;
+  line-height: 1.5rem;
   letter-spacing: -0.02em;
   color: #686a6c;
+  -webkit-font-smoothing: antialiased;
 }
 
 .subHeading{
@@ -114,6 +118,7 @@ body {
   letter-spacing: -0.01em;
   font-weight: 700;
   transition: border-color 0.2s;
+  -webkit-font-smoothing: antialiased;
 }
 
 .inputFieldIcon{
@@ -161,7 +166,6 @@ body {
 }
 
 .section {
-  /* min-height: 500px; */
   display: grid;
 }
 
@@ -215,6 +219,7 @@ body {
   letter-spacing: 0.17em;
   text-transform: uppercase;
   color: #202025;
+  -webkit-font-smoothing: antialiased;
 }
 
 @media only screen and (min-width: 1024px) {
@@ -345,6 +350,7 @@ body {
     "featuresList featuresList";
 }
 
+
 #circularButton {
   display: flex;
   justify-content: center;
@@ -367,6 +373,8 @@ body {
 
 #section5Description {
   margin-top: 48px;
+  max-width: 500px;
+  line-height: 2rem;
 }
 
 #featuresTitle {
@@ -421,6 +429,7 @@ body {
   color: #202025;
   transition: all 0.2s;
   filter: drop-shadow(0 0.5rem 0.5rem rgba(0, 0, 0, 0.06));
+  -webkit-font-smoothing: antialiased;
 }
 
 .featureItemAvatar {
@@ -503,14 +512,24 @@ body {
     overflow-y: scroll;
   }
 
-  /* #featuresList::-webkit-scrollbar {
-   display:none;
-} */
-
   #featuresTitle {
-    height: 500px;
+    height: 600px;
+    padding: 4rem;
   }
+}
 
+@media only screen and (min-width: 1200px) {
+  #featuresTitle {
+    height: 700px;
+    padding: 6rem;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  #featuresTitle {
+    height: 900px;
+    padding: 8rem;
+  }
 }
 
 #section6 {    
