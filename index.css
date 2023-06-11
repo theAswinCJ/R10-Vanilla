@@ -636,6 +636,11 @@ body {
   #section8Content{
     padding:3rem;
   }
+
+  #section8Content p{
+    max-width:550px;
+    line-height: 2rem;
+  }
 }
 
 #section9 {
